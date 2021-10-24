@@ -448,36 +448,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6299063045283484401
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6299063045283484402}
-  m_Layer: 0
-  m_Name: pos-0
-  m_TagString: Agent
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6299063045283484402
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6299063045283484401}
-  m_LocalRotation: {x: -0, y: 0.5974709, z: -0, w: 0.8018906}
-  m_LocalPosition: {x: -1.7328646, y: 0, z: -0.9007615}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6809199770778660275}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 82.905, z: 0}
 --- !u!1 &6809199770778660286
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +462,7 @@ GameObject:
   - component: {fileID: 5558697425439888226}
   - component: {fileID: 4459206839045049883}
   m_Layer: 0
-  m_Name: Robot-Meters Scale
+  m_Name: Robo
   m_TagString: Agent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,7 +485,6 @@ Transform:
   - {fileID: 1544933727053032276}
   - {fileID: 7836127735981778783}
   - {fileID: 8835257167062633951}
-  - {fileID: 6299063045283484402}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 85.712, z: 0}
@@ -555,7 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   Positions:
-  - {fileID: 6299063045283484401}
+  - {fileID: 0}
   Factory: {fileID: 0}
   _reachedTarget: 0
 --- !u!114 &5558697425439888226

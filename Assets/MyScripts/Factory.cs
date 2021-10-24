@@ -6,7 +6,7 @@ public class Factory : MonoBehaviour
 {
     public GameObject Prefab;
     public string TargetTag;
-    public int MakeLimit = 6; //maximum agents before destruction
+    public int MakeLimit = 10; //maximum agents before destruction
     private int _makeCount = 0; //each time we make an agent, add to count
     private GameObject Target;
 

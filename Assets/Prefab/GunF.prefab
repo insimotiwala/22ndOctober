@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780828612406112502}
   - component: {fileID: 1780828612406112503}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,11 +102,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780828612784935077}
-  - component: {fileID: 1780828612784935100}
-  - component: {fileID: 1780828612784935103}
   - component: {fileID: 1780828612784935073}
   - component: {fileID: 1780828612784935072}
-  m_Layer: 0
+  - component: {fileID: 5481021069809013595}
+  - component: {fileID: 8122974959137233951}
+  - component: {fileID: 1029284421040507643}
+  - component: {fileID: 5705694739584460074}
+  m_Layer: 7
   m_Name: GunF
   m_TagString: Factory
   m_Icon: {fileID: 0}
@@ -120,52 +122,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780828612784935076}
-  m_LocalRotation: {x: -0, y: 0.9871948, z: -0, w: -0.15951975}
-  m_LocalPosition: {x: 33.318, y: 33.075, z: 62.4}
-  m_LocalScale: {x: 4.813547, y: 6.9594264, z: 12.40207}
+  m_LocalRotation: {x: -0, y: 0.9060313, z: -0, w: -0.42321065}
+  m_LocalPosition: {x: 89.5, y: 0.84217453, z: 74.8}
+  m_LocalScale: {x: 4.8135486, y: 6.9594264, z: 12.402074}
   m_Children:
   - {fileID: 1780828612406112502}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 198.358, z: 0}
---- !u!195 &1780828612784935100
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1780828612784935076}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &1780828612784935103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1780828612784935076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ff59f0ea9e56c46b5b1a5545546308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 851614931114860406, guid: 4bab06a18234fdf478dd43c0770543b0, type: 3}
-  TargetTag: Respawn
-  MakeLimit: 5
-  MakeRate: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 230.075, z: 0}
 --- !u!33 &1780828612784935073
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -215,3 +179,60 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5481021069809013595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780828612784935076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9999999, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8122974959137233951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780828612784935076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80a73373dc80a24fb4c16520dba8a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1029284421040507643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780828612784935076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdf2c555b1797847915e226ede08cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefabs:
+  - {fileID: 851614931114860406, guid: 4bab06a18234fdf478dd43c0770543b0, type: 3}
+  - {fileID: 8929418382590329668, guid: 4ac4ac04202001044a14736f55bfdda7, type: 3}
+  - {fileID: 8929418382590329668, guid: 9a0f1a49ab0130048bb1b748bb7d288a, type: 3}
+  TargetTag: Respawn
+  MakeLimit: 7
+  MakeRate: 2
+--- !u!114 &5705694739584460074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780828612784935076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18abf2cefd334284f8ef799656730a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 1780828612406112503}

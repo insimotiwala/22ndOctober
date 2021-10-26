@@ -102,10 +102,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8449363773382032537}
-  - component: {fileID: 8449363773382032536}
-  - component: {fileID: 8449363773382032539}
   - component: {fileID: 8449363773382032540}
   - component: {fileID: 8449363773382032541}
+  - component: {fileID: 2870739604507007765}
+  - component: {fileID: 6095842446417267823}
+  - component: {fileID: 8449363773382032539}
+  - component: {fileID: 3685099385583967440}
   m_Layer: 7
   m_Name: Factory01
   m_TagString: Factory
@@ -120,52 +122,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8449363773382032543}
-  m_LocalRotation: {x: 0, y: -0.9010278, z: 0, w: 0.43376136}
-  m_LocalPosition: {x: 26.4, y: 33.022, z: 10.5}
-  m_LocalScale: {x: 5.232116, y: 7.564594, z: 13.480511}
+  m_LocalRotation: {x: -0, y: -0.901029, z: -0, w: 0.433759}
+  m_LocalPosition: {x: 82.06198, y: 0.7891731, z: 22.037453}
+  m_LocalScale: {x: 5.2321157, y: 7.564594, z: 13.480509}
   m_Children:
   - {fileID: 8449363772017856696}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -128.587, z: 0}
---- !u!195 &8449363773382032536
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8449363773382032543}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 360
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &8449363773382032539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8449363773382032543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ff59f0ea9e56c46b5b1a5545546308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 6809199770778660286, guid: b34388f4f6a2fbe4b93626d6008bb0c1, type: 3}
-  TargetTag: Target
-  MakeLimit: 3
-  MakeRate: 5
 --- !u!33 &8449363773382032540
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -215,3 +179,57 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2870739604507007765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449363773382032543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6095842446417267823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449363773382032543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80a73373dc80a24fb4c16520dba8a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8449363773382032539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449363773382032543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ff59f0ea9e56c46b5b1a5545546308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 6809199770778660286, guid: 023376df6b91646488df7d7f567b768f, type: 3}
+  TargetTag: Target
+  MakeLimit: 3
+  MakeRate: 5
+--- !u!114 &3685099385583967440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449363773382032543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18abf2cefd334284f8ef799656730a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 8449363772017856697}

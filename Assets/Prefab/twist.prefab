@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5416461712059727433
 Transform:
   m_ObjectHideFlags: 0
@@ -72,14 +72,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62910f4a26dbea4b80ac80e6b1abd90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 2651617278029716814, guid: 522debe513c2686419480c38154760d5, type: 3}
+  Target: {fileID: 3269060133648801363, guid: 2c94606fe83f33a4cb057045af8ec4f3, type: 3}
   Positions:
   - {fileID: 6471169561960328947}
   - {fileID: 6354589199283706220}
   - {fileID: 6023935397554501270}
   - {fileID: 8754953805962559657}
   - {fileID: 8754953805410999766}
-  Factory: {fileID: 1971384405569216493, guid: 1c4b2b7ce298abc41bb75f3a13993f52, type: 3}
+  Factory: {fileID: 3284848869533848296, guid: a2648d51b4adbc4459385044694623df, type: 3}
   _reachedTarget: 0
 --- !u!1 &6023935397554501270
 GameObject:
@@ -263,10 +263,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7219360276889505254}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 1b2f4e6ecb3c83246b93e5acb2a1a6c1, type: 3}
 --- !u!54 &7775559617302787959

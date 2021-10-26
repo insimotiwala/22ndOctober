@@ -9,11 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1971384405569216018}
-  - component: {fileID: 1971384405569216021}
-  - component: {fileID: 1971384405569216020}
   - component: {fileID: 1971384405569216022}
   - component: {fileID: 1971384405569216017}
-  m_Layer: 0
+  - component: {fileID: 3339854980917828311}
+  - component: {fileID: 1971384405569216020}
+  - component: {fileID: 5695235449147121685}
+  - component: {fileID: 3588529110860794139}
+  m_Layer: 7
   m_Name: Factory2
   m_TagString: Factory
   m_Icon: {fileID: 0}
@@ -28,51 +30,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971384405569216493}
   m_LocalRotation: {x: -0, y: -0.43987775, z: -0, w: 0.8980577}
-  m_LocalPosition: {x: -34.7, y: 33.022, z: 10.3}
-  m_LocalScale: {x: 5.232116, y: 7.564594, z: 13.480511}
+  m_LocalPosition: {x: 20.961979, y: 0.7891731, z: 21.837452}
+  m_LocalScale: {x: 5.2321167, y: 7.564594, z: 13.480513}
   m_Children:
   - {fileID: 1971384407521130395}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -52.192, z: 0}
---- !u!195 &1971384405569216021
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971384405569216493}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 360
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &1971384405569216020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971384405569216493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ff59f0ea9e56c46b5b1a5545546308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 851614931114860406, guid: 4bab06a18234fdf478dd43c0770543b0, type: 3}
-  TargetTag: Player
-  MakeLimit: 10
-  MakeRate: 2
 --- !u!33 &1971384405569216022
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -122,6 +86,60 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3339854980917828311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971384405569216493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80a73373dc80a24fb4c16520dba8a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1971384405569216020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971384405569216493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ff59f0ea9e56c46b5b1a5545546308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 851614931114860406, guid: 4bab06a18234fdf478dd43c0770543b0, type: 3}
+  TargetTag: TargetTag
+  MakeLimit: 10
+  MakeRate: 2
+--- !u!114 &5695235449147121685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971384405569216493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18abf2cefd334284f8ef799656730a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 1971384407521130392}
+--- !u!65 &3588529110860794139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971384405569216493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1971384407521130394
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1971384407521130395}
   - component: {fileID: 1971384407521130392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

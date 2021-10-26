@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class Movetest : MonoBehaviour
 {
-    // public GameObject Factory;
     public GameObject Target;
 
     private NavMeshAgent Agent;

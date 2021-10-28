@@ -80,6 +80,7 @@ MonoBehaviour:
   - {fileID: 5495272915324239428}
   - {fileID: 1055011246502288343}
   Factory: {fileID: 0}
+  Gun: {fileID: 6060614342296085941}
   _reachedTarget: 0
 --- !u!1 &1055011246502288343
 GameObject:

@@ -10,6 +10,7 @@ public class MobileUnit : MonoBehaviour
     public GameObject[] Positions;
     private NavMeshAgent Agent;
     public GameObject Factory; //Factory Prefab To Instantiate
+    public GameObject Gun;
     public Dictionary<GameObject, GameObject> Configure = new Dictionary<GameObject, GameObject>();
 
     [HideInInspector]
@@ -74,13 +75,13 @@ public class MobileUnit : MonoBehaviour
                 foreach (GameObject key in keys)
                 {
                     GameObject go = Configure[key];
-                    Destroy(go);
+                    //Destroy(go);
                 }
 
-                GameObject factory = Instantiate(Factory, transform.position, transform.rotation);
-                float moveY = factory.transform.localScale.y / 2; //Get Half Factory Height
-                factory.transform.position += new Vector3(0, moveY, 0); //Move Factory Up
-                Destroy(gameObject);
+                //GameObject factory = Instantiate(Factory, transform.position, transform.rotation);
+                //float moveY = factory.transform.localScale.y / 2; //Get Half Factory Height
+                //factory.transform.position += new Vector3(0, moveY, 0); //Move Factory Up
+                //Destroy(gameObject);
             }
 
             return;
@@ -99,6 +100,8 @@ public class MobileUnit : MonoBehaviour
                     Debug.Log("Target Reached!!!");
                     _reachedTarget = true;
                     Agent.enabled = false;
+                    GameObject keys = Configure.Keys.ToList()[0];
+                    Configure[keys] = Gun;
                 }
             }
         }

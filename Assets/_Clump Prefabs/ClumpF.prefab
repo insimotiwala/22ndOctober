@@ -106,14 +106,14 @@ GameObject:
   - component: {fileID: 3284848869533848300}
   - component: {fileID: 2061858592179225731}
   - component: {fileID: 3579775899595333088}
-  - component: {fileID: 3284848869533848291}
+  - component: {fileID: -348830911253051828}
   m_Layer: 7
-  m_Name: TwisterF
+  m_Name: ClumpF
   m_TagString: Factory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3284848869533848297
 Transform:
   m_ObjectHideFlags: 0
@@ -121,14 +121,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3284848869533848296}
-  m_LocalRotation: {x: -0, y: -0.12942709, z: -0, w: 0.991589}
-  m_LocalPosition: {x: 6.3, y: 0.7891731, z: 88.8}
+  m_LocalRotation: {x: 0, y: -0.517691, z: 0, w: 0.8555677}
+  m_LocalPosition: {x: 8.6, y: 0.7891731, z: 79}
   m_LocalScale: {x: 2.2239635, y: 3.2154062, z: 5.730026}
   m_Children:
   - {fileID: 3284848869379023555}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -14.873, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -62.355, z: 0}
 --- !u!33 &3284848869533848301
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80a73373dc80a24fb4c16520dba8a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3284848869533848291
+--- !u!114 &-348830911253051828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,10 +212,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3284848869533848296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ff59f0ea9e56c46b5b1a5545546308, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fdf2c555b1797847915e226ede08cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7391200016714391144, guid: 27e639bee0e28f64e94f90c01ad05292, type: 3}
+  Prefabs:
+  - {fileID: 8473083503872327078, guid: d1122830d137fbf49876525e301a2c87, type: 3}
+  - {fileID: 6553121634221710600, guid: f190841c53c82524d8cf22a0449db11e, type: 3}
+  - {fileID: 2604214039186955489, guid: 77a6dafca1ce42642a6f4b3dc3fb8a99, type: 3}
+  - {fileID: 734075379500657663, guid: 32dbf7a0baec11d42a87cdac3aa78d4d, type: 3}
+  - {fileID: 1507408774901756802, guid: a0248f66483cfae4dbdfba824936fb3f, type: 3}
   TargetTag: Player
-  MakeLimit: 6
+  MakeLimit: 7
   MakeRate: 2

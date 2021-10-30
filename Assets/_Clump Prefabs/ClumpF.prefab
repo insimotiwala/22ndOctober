@@ -121,9 +121,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3284848869533848296}
-  m_LocalRotation: {x: 0, y: -0.517691, z: 0, w: 0.8555677}
-  m_LocalPosition: {x: 8.6, y: 0.7891731, z: 79}
-  m_LocalScale: {x: 2.2239635, y: 3.2154062, z: 5.730026}
+  m_LocalRotation: {x: -0, y: -0.5176908, z: -0, w: 0.8555678}
+  m_LocalPosition: {x: 10.714, y: 1.9828, z: 58.683}
+  m_LocalScale: {x: 3.3303852, y: 4.263312, z: 8.534463}
   m_Children:
   - {fileID: 3284848869379023555}
   m_Father: {fileID: 0}
@@ -222,5 +222,5 @@ MonoBehaviour:
   - {fileID: 734075379500657663, guid: 32dbf7a0baec11d42a87cdac3aa78d4d, type: 3}
   - {fileID: 1507408774901756802, guid: a0248f66483cfae4dbdfba824936fb3f, type: 3}
   TargetTag: Player
-  MakeLimit: 7
+  MakeLimit: 11
   MakeRate: 2

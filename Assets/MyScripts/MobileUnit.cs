@@ -10,7 +10,7 @@ public class MobileUnit : MonoBehaviour
     public GameObject[] Positions;
     private NavMeshAgent Agent;
     public GameObject Factory; //Factory Prefab To Instantiate
-    public GameObject Gun;
+    public GameObject ClumpMesh;
     public Dictionary<GameObject, GameObject> Configure = new Dictionary<GameObject, GameObject>();
 
     [HideInInspector]
@@ -101,7 +101,7 @@ public class MobileUnit : MonoBehaviour
                     _reachedTarget = true;
                     Agent.enabled = false;
                     GameObject keys = Configure.Keys.ToList()[0];
-                    Configure[keys] = Gun;
+                    Configure[keys] = ClumpMesh;
                 }
             }
         }

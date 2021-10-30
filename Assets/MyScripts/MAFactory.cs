@@ -6,12 +6,11 @@ public class MAFactory : MonoBehaviour
 {
     private bool _prefab = false;
 
-    //public GameObject Prefab1;
-    // public GameObject Prefab2;
-    // public GameObject prefab3;
     public GameObject[] Prefabs;
 
+    //private int _prefabcount = 0;
     public string TargetTag;
+
     public int MakeLimit = 6; //maximum agents before destruction
     private int _makeCount = 0; //each time we make an agent, add to count
     private GameObject Target;
@@ -46,15 +45,27 @@ public class MAFactory : MonoBehaviour
             _lastMake = 0; //reset time counter
             _makeCount++; //increase agent make count by one
 
-            /*/ GameObject prefab = Prefab1;
+            /* GameObject prefab = Prefab1;
             if (_prefab)
             {
-                 prefab = Prefab2;
-         }
-          _prefab = !_prefab; //switch boolean
-            /*/
+                prefab = Prefab2;
+            }
+            _prefab = !_prefab; //switch boolean
+            */
+
+            /* GameObject prefab = Prefabs[_prefabcount];
+             if (_prefabcount == Prefabs.Length)
+             {
+                 _prefabcount = 0;
+             }
+             else
+             {
+                 _prefabcount++;
+             }
+            */
 
             GameObject prefab = Prefabs[Random.Range(0, Prefabs.Length)]; //random prefab
+
             GameObject go = Instantiate(prefab, this.transform.position, Quaternion.identity);
             MobileUnit mu = go.GetComponent<MobileUnit>();
             mu.Target = Target;

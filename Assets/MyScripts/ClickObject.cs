@@ -16,7 +16,7 @@ public class ClickObject : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Space))
         {
             robo = GetComponent<NavMeshAgent>();
             robo.SetDestination(reachehere.transform.position);

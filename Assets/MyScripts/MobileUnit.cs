@@ -49,7 +49,7 @@ public class MobileUnit : MonoBehaviour
         if (_reachedTarget)
         {
             bool allConfig = true;
-            foreach (KeyValuePair<GameObject, GameObject> kvp in Configure)
+            foreach (var kvp in Configure)
             {
                 //Guard Statement
                 if (kvp.Value == null) { allConfig = false; continue; }
@@ -78,10 +78,10 @@ public class MobileUnit : MonoBehaviour
                     //Destroy(go);
                 }
 
-                //GameObject factory = Instantiate(Factory, transform.position, transform.rotation);
-                //float moveY = factory.transform.localScale.y / 2; //Get Half Factory Height
-                //factory.transform.position += new Vector3(0, moveY, 0); //Move Factory Up
-                //Destroy(gameObject);
+                /*GameObject factory = Instantiate(Factory, transform.position, transform.rotation);
+                float moveY = factory.transform.localScale.y / 2; //Get Half Factory Height
+                factory.transform.position += new Vector3(0, moveY, 0); //Move Factory Up
+                Destroy(gameObject);*/
             }
 
             return;

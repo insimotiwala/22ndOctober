@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 2061858592179225731}
   - component: {fileID: 3579775899595333088}
   - component: {fileID: -348830911253051828}
+  - component: {fileID: 2810347600132096484}
   m_Layer: 7
   m_Name: ClumpF
   m_TagString: Factory
@@ -121,14 +122,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3284848869533848296}
-  m_LocalRotation: {x: -0, y: -0.5176908, z: -0, w: 0.8555678}
-  m_LocalPosition: {x: 10.714, y: 1.9828, z: 58.683}
-  m_LocalScale: {x: 3.3303852, y: 4.263312, z: 8.534463}
+  m_LocalRotation: {x: -0, y: -0.5060704, z: -0, w: 0.86249226}
+  m_LocalPosition: {x: 11.2, y: 1.927, z: 37.8}
+  m_LocalScale: {x: 3.3303852, y: 4.634763, z: 9.689177}
   m_Children:
   - {fileID: 3284848869379023555}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -62.355, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -60.805, z: 0}
 --- !u!33 &3284848869533848301
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -217,10 +218,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefabs:
   - {fileID: 8473083503872327078, guid: d1122830d137fbf49876525e301a2c87, type: 3}
-  - {fileID: 6553121634221710600, guid: f190841c53c82524d8cf22a0449db11e, type: 3}
-  - {fileID: 2604214039186955489, guid: 77a6dafca1ce42642a6f4b3dc3fb8a99, type: 3}
   - {fileID: 734075379500657663, guid: 32dbf7a0baec11d42a87cdac3aa78d4d, type: 3}
+  - {fileID: 2604214039186955489, guid: 77a6dafca1ce42642a6f4b3dc3fb8a99, type: 3}
+  - {fileID: 6553121634221710600, guid: f190841c53c82524d8cf22a0449db11e, type: 3}
   - {fileID: 1507408774901756802, guid: a0248f66483cfae4dbdfba824936fb3f, type: 3}
   TargetTag: Player
-  MakeLimit: 11
+  MakeLimit: 5
   MakeRate: 2
+--- !u!114 &2810347600132096484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3284848869533848296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18abf2cefd334284f8ef799656730a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 0}

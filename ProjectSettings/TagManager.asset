@@ -11,6 +11,7 @@ TagManager:
   - Terrain
   - MeshBake
   - Clump02
+  - Center
   layers:
   - Default
   - TransparentFX

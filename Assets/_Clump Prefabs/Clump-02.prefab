@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4847843599851577219}
   m_LocalRotation: {x: -0, y: -0.901029, z: -0, w: 0.433759}
-  m_LocalPosition: {x: 86, y: 0.7891731, z: 21.3}
+  m_LocalPosition: {x: 84, y: 0.7891731, z: 17.3}
   m_LocalScale: {x: 5.2321157, y: 7.564594, z: 13.480509}
   m_Children:
   - {fileID: 4847843601140249508}
@@ -136,9 +136,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fdf2c555b1797847915e226ede08cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefabs: []
-  TargetTag: 
-  MakeLimit: 6
+  Prefabs:
+  - {fileID: 403637504565786215, guid: 9c000216c19fd8e4d9ac72ec89d5ad02, type: 3}
+  - {fileID: 5815492950576759660, guid: 426214b1be70e4c428699e2337ef0fc8, type: 3}
+  - {fileID: 832191835941435520, guid: e7998fe0f45bf1f4aa6c57aecb01641b, type: 3}
+  - {fileID: 3333732706549582369, guid: 4fe55d23f6b202a4c855b61be6dfe4c0, type: 3}
+  - {fileID: 2515490302201906778, guid: 2754751d31a166c4ca22a4f559627ba6, type: 3}
+  TargetTag: Clump02
+  MakeLimit: 5
   MakeRate: 2
 --- !u!1 &4847843601140249510
 GameObject:

@@ -35,7 +35,7 @@ public class cursor : MonoBehaviour
                 _selectedFactory.transform.position = hit.point + new Vector3(0, yy, 0);
                 if (Input.GetButtonDown("South"))
                 {
-                    Factory factory = _selectedFactory.GetComponent<Factory>();
+                    MAFactory factory = _selectedFactory.GetComponent<MAFactory>();
                     factory.enabled = true;
                     _isRelocating = false;
                 }
@@ -49,7 +49,7 @@ public class cursor : MonoBehaviour
                 if (Input.GetButtonDown("South"))
                 {
                     _selectedFactory = hit.transform.gameObject;
-                    Factory factory = _selectedFactory.GetComponent<Factory>();
+                    MAFactory factory = _selectedFactory.GetComponent<MAFactory>();
                     factory.enabled = false;
                     _isRelocating = true;
                 }
